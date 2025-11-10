@@ -67,33 +67,34 @@ int main()
         cout << endl;
     }
     cout<<"pattern 5"<<endl;
-    /* pattern 4
+    /* pattern 5
     A
     BC
     DEF
     GHIJ
     */
-    for (int i = 1; i <= 4; i++)
-    {
-        for (int j = 1; j <= i; j++)
-        {
-            cout << (char)('A'+i+j-2);
+   for (int i = 1; i <= 4; i++)
+   {
+       for (int j = 1; j <= i; j++)
+       {
+           cout << (char)('A'+i+j-2);
         }
         cout << endl;
     }
-    /* pattern 5
+    cout<<"pattern 6"<<endl;
+    /* pattern 6
     *****
     *   *
     *   *
     *****
     */
-    for (int i = 1; i <= 4; i++)
-    {
-        cout<<"*";
-        for (int j = 1; j <= 3; j++)
-        {
-            if(i==1 || i==4){
-                cout<<'*';
+   for (int i = 1; i <= 4; i++)
+   {
+       cout<<"*";
+       for (int j = 1; j <= 3; j++)
+       {
+           if(i==1 || i==4){
+               cout<<'*';
             }
             else{
                 cout<<' ';
@@ -102,19 +103,20 @@ int main()
         cout<<"*"<<endl;
         cout << endl;
     }
-    /* pattern 5
-        *
-       **
-      ***
-     ****
+    cout<<"pattern 7"<<endl;
+    /* pattern 7
+    *
+    **
+    ***
+    ****
     */
-    for (int i = 1; i <= 4; i++)
-    {
-        
-        for (int j = 1; j <= 3; j++)
-        {
-            if(j>=4-i+1){
-                cout<<'*';
+   for (int i = 1; i <= 4; i++)
+   {
+       
+       for (int j = 1; j <= 3; j++)
+       {
+           if(j>=4-i+1){
+               cout<<'*';
             }
             else{
                 cout<<' ';
@@ -123,6 +125,58 @@ int main()
         cout<<"*"<<endl;
         cout << endl;
     }
+    
+    
+    cout<<"pattern 8"<<endl;
+    /* pattern 8
+    1
+    23
+    456
+    78910
+    */
+   for (int i = 1; i <= 4; i++)
+   {
+       for (int j = 1; j <= i; j++)
+       {
+           cout << 1+i+j-2;
+        }
+        cout << endl;
+    }
+
+    cout<<"pattern 9"<<endl;
+    /* pattern 9
+             *
+            ***
+           *****
+          *******
+          *******
+           *****
+            ***
+             *
+    */
+    for (int i = 1; i <= 4; i++)
+    {
+        for (int j = 1; j <= (4-i); j++)
+        {
+            cout << ' ';
+        }
+        for (int j=1;j<=2*i-1;j++){
+            cout<<'*';
+        }
+        cout << endl;
+    }
+    for (int i = 4; i >= 1; i--)
+    {
+        for (int j = 1; j <= (4-i); j++)
+        {
+            cout << ' ';
+        }
+        for (int j=1;j<=2*i-1;j++){
+            cout<<'*';
+        }
+        cout << endl;
+    }
+
 
     return 0;
 }
